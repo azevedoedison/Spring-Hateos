@@ -25,9 +25,11 @@ Ou via Postman:
 
 O que foi feito:
 
-Dentro do pom.xml foi adicionada a dependência:
+Dentro do pom.xml foi adicionada a dependência do Spring-Hateoas:
+![](https://user-images.githubusercontent.com/414878/218905707-47e3e9bb-32c5-4274-b0d3-7787cd43f189.PNG)
 
-<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-hateoas</artifactId>
-	</dependency>
+A entidade Client começa a extender representantionModel:
+![](https://user-images.githubusercontent.com/414878/218905820-3c5919f5-e6eb-46f8-b830-1fe762e9485d.PNG)
+
+Na controler cria-se uma iteração sobre a lista de clientes contidos na página clientPage e adiciona um link de autoreferência a cada cliente:
+![](https://user-images.githubusercontent.com/414878/218905980-4a387ce8-7af8-4789-8fe1-5cb3829aa87b.PNG)
